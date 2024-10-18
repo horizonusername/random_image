@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            button{
+    width:100%;
+    height:75px ;
+}
+body{
+background-image: url(https://tr.rbxcdn.com/a800b893e1b3841649101801c6d35ec1/768/432/Image/Webp);
+background-repeat: no-repeat;
+background-size: cover;
+}
+        </style>
+    </head>
+    <body style="text-align:center">
+        <img src="https://tr.rbxcdn.com/0e79d8273725390c3569d142f6b2f8bb/420/420/Image/Png" id="a1" width="300" height="300">
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="a3" style="font-size:50px;font-family: sans-serif;color:white"></p>
+        <button onclick="image0a2()" style="font-size:30px">Generate</button>
+
+        <script>
+let images = [
+{
+    url:"https://tr.rbxcdn.com/44f7d265fed68d2f25a9d304f3477c00/420/420/Image/Png",
+    description:"You have gotten Grass tier the most basic tier in the whole game even if you try to remove it."
+},
+{
+    url:"https://tr.rbxcdn.com/dbdf172bbf68c95d59d6f85bb157e31c/420/420/Image/Png",
+    description:"You have gotten Prestige tier better than the Grass tier and is the first reset layer in the entire game."
+},
+{
+    url:"https://tr.rbxcdn.com/29cc48336c42568d915ac6548bc794a4/420/420/Image/Png",
+    description:"You have gotten crystal tier it can reset the last reset layer called Prestige and it is very important early game."
+},
+{
+    url:"https://tr.rbxcdn.com/8410edf2a6240356a02ec78a2a87e121/420/420/Image/Png",
+    description:"You have gotten Grasshop tier in this tier the more you use it you get buffs but its requirement increases by 10 levels."
+},
+{
+    url:"https://tr.rbxcdn.com/a17ebaa4c6b3dbcd9cac202a229bea98/420/420/Image/Png",
+    description:"You have gotten galactic tier in this tier you have unlocked someting called stars in this tier."
+},
+{
+    url:"https://tr.rbxcdn.com/b1ca2ab63dc3e4101149c3658ef03a06/420/420/Image/Png",
+    description:"You have gotten the best tier of all better than every single tier, even if they were all combined!"
+}
+];
+function image0a2(){
+     let index = Math.floor(Math.random()*images.length)
+                let randomImages = images[index];
+                document.getElementById('a1').src = randomImages.url
+                document.getElementById('a3').textContent=randomImages.description
+}
+
+        </script>
+    </body>
+</html>
